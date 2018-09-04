@@ -7,7 +7,13 @@ class CaesarCypherTest {
 	@Test
 	void testEncode1() {
 		CaesarCypher c = new CaesarCypher(3);
-		assertEquals("KHOOB", c.encode("HELLO"));
+		assertEquals("KHOOR", c.encode("HELLO"));
+	}
+	
+	@Test
+	void testEncode2() {
+		CaesarCypher c = new CaesarCypher(3);
+		assertEquals("RHOOK", c.encode("OELLH"));
 	}
 
 }
